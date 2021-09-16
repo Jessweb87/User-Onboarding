@@ -17,7 +17,7 @@ const formSchema = yup.object({
         .min(8, 'Password must be at least 8 characters long'),
     terms: yup
         .string()
-        .oneOf(['agree', 'do not agree'], 'Selection is required!')
+        .oneOf(['agree', 'disagree'], 'Selection is required!')
 })
 
 export default formSchema;
